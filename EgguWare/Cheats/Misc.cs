@@ -6,17 +6,14 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000046 RID: 70
 	[Comp]
 	public class Misc : MonoBehaviour
 	{
-		// Token: 0x060000DF RID: 223 RVA: 0x00002626 File Offset: 0x00000826
 		private void Start()
 		{
 			Misc.instance = this;
 		}
 
-		// Token: 0x060000E0 RID: 224 RVA: 0x0000A314 File Offset: 0x00008514
 		private void Update()
 		{
 			if (G.Settings.MiscOptions.FullBright)

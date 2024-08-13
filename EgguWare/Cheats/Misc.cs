@@ -31,7 +31,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000E1 RID: 225 RVA: 0x0000A3C8 File Offset: 0x000085C8
 		private void OnGUI()
 		{
 			if (!G.Settings.MiscOptions.ShowVanishPlayers || G.BeingSpied || !Provider.isConnected || Provider.clients.Count <= 0)
@@ -44,7 +43,6 @@ namespace EgguWare.Cheats
 			this.VanishPlayerRect.y = rect.y;
 		}
 
-		// Token: 0x060000E2 RID: 226 RVA: 0x0000A454 File Offset: 0x00008654
 		private void VanishPlayerWindow(int winid)
 		{
 			GUILayout.Space(0f);
@@ -58,7 +56,6 @@ namespace EgguWare.Cheats
 			GUI.DragWindow();
 		}
 
-		// Token: 0x060000E3 RID: 227 RVA: 0x0000A4E4 File Offset: 0x000086E4
 		private void FixedUpdate()
 		{
 			if (Player.player && Provider.isConnected)
@@ -136,10 +133,8 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x04000126 RID: 294
 		public static Misc instance;
 
-		// Token: 0x04000127 RID: 295
 		public Rect VanishPlayerRect = new Rect((float)(Screen.width - 395), 50f, 200f, 100f);
 	}
 }

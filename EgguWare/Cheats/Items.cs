@@ -9,17 +9,15 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000044 RID: 68
 	[Comp]
 	public class Items : MonoBehaviour
 	{
-		// Token: 0x060000D3 RID: 211 RVA: 0x000025F8 File Offset: 0x000007F8
+
 		private void Start()
 		{
 			base.StartCoroutine(this.RefreshClumpedItems());
 		}
 
-		// Token: 0x060000D4 RID: 212 RVA: 0x00009F9C File Offset: 0x0000819C
 		private void Update()
 		{
 			if (G.Settings.MiscOptions.AutoItemPickup)
@@ -51,7 +49,7 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000D5 RID: 213 RVA: 0x0000A098 File Offset: 0x00008298
+
 		private void OnGUI()
 		{
 			if (!G.BeingSpied && Provider.isConnected && G.Settings.MiscOptions.GrabItemThroughWalls && G.Settings.MiscOptions.LimitFOV && G.Settings.MiscOptions.DrawFOVCircle)
@@ -60,7 +58,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000D6 RID: 214 RVA: 0x00002607 File Offset: 0x00000807
 		private IEnumerator RefreshClumpedItems()
 		{
 			for (;;)
@@ -97,7 +94,6 @@ namespace EgguWare.Cheats
 			yield break;
 		}
 
-		// Token: 0x060000D7 RID: 215 RVA: 0x0000A120 File Offset: 0x00008320
 		public static bool IsAlreadyClumped(InteractableItem item)
 		{
 			using (List<ItemClumpObject>.Enumerator enumerator = ESP.ItemClumps.GetEnumerator())

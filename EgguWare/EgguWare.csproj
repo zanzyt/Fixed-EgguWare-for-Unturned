@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{623842B6-357B-4774-9F29-B90BD11F18C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EgguWare</RootNamespace>
+    <AssemblyName>EgguWare</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\Unturned\Unturned_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="HighlightingSystem">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\HighlightingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.Glazier.Runtime">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\SDG.Glazier.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetPak.Runtime">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\SDG.NetPak.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetTransport">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\SDG.NetTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Users\karin\OneDrive\Рабочий стол\Sex.Camera.Action.Build.15171810\Sex, Camera, Action!_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Users\karin\OneDrive\Рабочий стол\Sex.Camera.Action.Build.15171810\Sex, Camera, Action!_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files (x86)\steam\steamapps\common\U3DS\Unturned_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Users\karin\OneDrive\Рабочий стол\Sex.Camera.Action.Build.15171810\Sex, Camera, Action!_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Users\karin\OneDrive\Рабочий стол\Sex.Camera.Action.Build.15171810\Sex, Camera, Action!_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Users\karin\OneDrive\Рабочий стол\Sex.Camera.Action.Build.15171810\Sex, Camera, Action!_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Users\karin\OneDrive\Рабочий стол\Sex.Camera.Action.Build.15171810\Sex, Camera, Action!_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Comp.cs" />
+    <Compile Include="Cheats\Aimlock.cs" />
+    <Compile Include="Cheats\ESP.cs" />
+    <Compile Include="Cheats\Items.cs" />
+    <Compile Include="Cheats\Misc.cs" />
+    <Compile Include="Cheats\PlayerCam.cs" />
+    <Compile Include="Cheats\Unrestricted.cs" />
+    <Compile Include="Cheats\Weapons.cs" />
+    <Compile Include="Classes\AimbotOptions.cs" />
+    <Compile Include="Classes\ESPObj.cs" />
+    <Compile Include="Classes\ESPObject.cs" />
+    <Compile Include="Classes\IndicatorObject.cs" />
+    <Compile Include="Classes\ItemClumpObject.cs" />
+    <Compile Include="Classes\ItemWhitelistObject.cs" />
+    <Compile Include="Classes\MenuTab.cs" />
+    <Compile Include="Classes\MiscOptions.cs" />
+    <Compile Include="Classes\Mute.cs" />
+    <Compile Include="Classes\Priority.cs" />
+    <Compile Include="Classes\SettingsOptions.cs" />
+    <Compile Include="Classes\ShaderType.cs" />
+    <Compile Include="Classes\TargetLimb.cs" />
+    <Compile Include="Classes\TargetLimb1.cs" />
+    <Compile Include="Classes\TracerObject.cs" />
+    <Compile Include="G.cs" />
+    <Compile Include="Load.cs" />
+    <Compile Include="Menu\Main.cs" />
+    <Compile Include="Menu\Tabs\AimbotTab.cs" />
+    <Compile Include="Menu\Tabs\MiscTab.cs" />
+    <Compile Include="Menu\Tabs\PlayersTab.cs" />
+    <Compile Include="Menu\Tabs\SettingsTab.cs" />
+    <Compile Include="Menu\Tabs\VisualsTab.cs" />
+    <Compile Include="Menu\Tabs\WeaponsTab.cs" />
+    <Compile Include="Menu\Windows\GUIWindow.cs" />
+    <Compile Include="Menu\Windows\WhitelistWindow.cs" />
+    <Compile Include="Options\AimbotOptions.cs" />
+    <Compile Include="Options\Config.cs" />
+    <Compile Include="Options\ESP\ESPOptions.cs" />
+    <Compile Include="Options\ESP\OtherOptions.cs" />
+    <Compile Include="Options\MiscOptions.cs" />
+    <Compile Include="Options\WeaponOptions.cs" />
+    <Compile Include="Overrides\hkChatManager.cs" />
+    <Compile Include="Overrides\hkDamageTool.cs" />
+    <Compile Include="Overrides\hkItemManager.cs" />
+    <Compile Include="Overrides\hkLocalHwid.cs" />
+    <Compile Include="Overrides\hkPlayer.cs" />
+    <Compile Include="Overrides\hkPlayerPauseUI.cs" />
+    <Compile Include="Overrides\hkPlayerQuests.cs" />
+    <Compile Include="Overrides\hkProvider.cs" />
+    <Compile Include="Overrides\hkRegions.cs" />
+    <Compile Include="Overrides\hkUsableGun.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\AssetUtilities.cs" />
+    <Compile Include="Utilities\AttributeUtilities.cs" />
+    <Compile Include="Utilities\Colors.cs" />
+    <Compile Include="Utilities\ConfigUtilities.cs" />
+    <Compile Include="Utilities\CreateICOSphere.cs" />
+    <Compile Include="Utilities\Extensions.cs" />
+    <Compile Include="Utilities\Manager.cs" />
+    <Compile Include="Utilities\OverrideHelper.cs" />
+    <Compile Include="Utilities\SphereComponent.cs" />
+    <Compile Include="Utilities\T.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

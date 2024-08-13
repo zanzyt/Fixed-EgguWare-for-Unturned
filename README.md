@@ -1,5 +1,10 @@
 # EgguWare
 ultra gamer unturned cheat. youre gonna have to find your own bypass/loader
+
+To inject the cheat, use any mono loaders. 
+Namespace: EgguWare 
+Class: Load
+Method: Start
 ## screenshots
 
 ![ss2](https://i.imgur.com/vCgvXBM.png)

@@ -1,9 +1,5 @@
 # EgguWare
-ultra gamer unturned cheat.
-source only, youre gonna have to find your own bypass/loader
-
-Updated version of the cheat (not updated by me): https://www.unknowncheats.me/forum/other-fps-games/475356-egguware-unturned-cheat-updated.html
-
+ultra gamer unturned cheat. youre gonna have to find your own bypass/loader
 ## screenshots
 
 ![ss2](https://i.imgur.com/vCgvXBM.png)
@@ -70,3 +66,4 @@ Updated version of the cheat (not updated by me): https://www.unknowncheats.me/f
   * custom limb 
   * spectate camera
     * fullscreen spectate
+ 

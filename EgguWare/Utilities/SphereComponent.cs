@@ -6,10 +6,9 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x0200000E RID: 14
+
 	public class SphereComponent : MonoBehaviour
 	{
-		// Token: 0x0600002F RID: 47 RVA: 0x00003D50 File Offset: 0x00001F50
 		private void Awake()
 		{
 			this.Coroutines.Add(base.StartCoroutine(this.RecalcSize()));
@@ -18,7 +17,6 @@ namespace EgguWare.Utilities
 			base.StartCoroutine(this.Kill());
 		}
 
-		// Token: 0x06000030 RID: 48 RVA: 0x00002200 File Offset: 0x00000400
 		private IEnumerator Kill()
 		{
 			for (;;)
@@ -36,7 +34,6 @@ namespace EgguWare.Utilities
 			yield break;
 		}
 
-		// Token: 0x06000031 RID: 49 RVA: 0x0000220F File Offset: 0x0000040F
 		private IEnumerator RecalcSize()
 		{
 			for (;;)
@@ -53,7 +50,6 @@ namespace EgguWare.Utilities
 			yield break;
 		}
 
-		// Token: 0x06000032 RID: 50 RVA: 0x0000221E File Offset: 0x0000041E
 		private IEnumerator CalcVelocity()
 		{
 			for (;;)
@@ -65,7 +61,6 @@ namespace EgguWare.Utilities
 			yield break;
 		}
 
-		// Token: 0x06000033 RID: 51 RVA: 0x0000222D File Offset: 0x0000042D
 		private IEnumerator CalcSphere()
 		{
 			for (;;)
@@ -86,25 +81,18 @@ namespace EgguWare.Utilities
 			yield break;
 		}
 
-		// Token: 0x04000012 RID: 18
 		public GameObject Sphere;
 
-		// Token: 0x04000013 RID: 19
 		public Vector3 LastPos;
 
-		// Token: 0x04000014 RID: 20
 		public float Velocity;
 
-		// Token: 0x04000015 RID: 21
 		public float SphereRadius;
 
-		// Token: 0x04000016 RID: 22
 		public float LastHit;
 
-		// Token: 0x04000017 RID: 23
 		public Vector3 SphereScale;
-
-		// Token: 0x04000018 RID: 24
+		
 		public List<Coroutine> Coroutines = new List<Coroutine>();
 	}
 }

@@ -4,10 +4,8 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x02000008 RID: 8
 	public static class CreateICOSphere
 	{
-		// Token: 0x0600001A RID: 26 RVA: 0x00002D44 File Offset: 0x00000F44
 		private static int getMiddlePoint(int p1, int p2, ref List<Vector3> vertices, ref Dictionary<long, int> cache, float radius)
 		{
 			bool flag = p1 < p2;
@@ -28,7 +26,6 @@ namespace EgguWare.Utilities
 			return count;
 		}
 
-		// Token: 0x0600001B RID: 27 RVA: 0x00002E00 File Offset: 0x00001000
 		public static GameObject Create(string name, float radius, float recursionLevel)
 		{
 			GameObject gameObject = new GameObject(name);
@@ -123,10 +120,8 @@ namespace EgguWare.Utilities
 			return gameObject;
 		}
 
-		// Token: 0x02000009 RID: 9
 		private struct TriangleIndices
 		{
-			// Token: 0x0600001C RID: 28 RVA: 0x000021A2 File Offset: 0x000003A2
 			public TriangleIndices(int v1, int v2, int v3)
 			{
 				this.v1 = v1;
@@ -134,13 +129,10 @@ namespace EgguWare.Utilities
 				this.v3 = v3;
 			}
 
-			// Token: 0x0400000D RID: 13
 			public int v1;
 
-			// Token: 0x0400000E RID: 14
 			public int v2;
 
-			// Token: 0x0400000F RID: 15
 			public int v3;
 		}
 	}

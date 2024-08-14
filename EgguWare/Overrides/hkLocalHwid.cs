@@ -6,10 +6,8 @@ using SDG.Unturned;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x0200001B RID: 27
 	public class hkLocalHwid
 	{
-		// Token: 0x0600008B RID: 139 RVA: 0x000060D8 File Offset: 0x000042D8
 		public static byte[] OV_getHwid()
 		{
 			List<byte> list = new List<byte>();

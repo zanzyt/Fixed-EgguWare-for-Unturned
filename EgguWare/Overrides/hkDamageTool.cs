@@ -6,17 +6,14 @@ using UnityEngine;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x02000019 RID: 25
 	public static class hkDamageTool
 	{
-		// Token: 0x06000084 RID: 132 RVA: 0x000023C4 File Offset: 0x000005C4
 		[Obsolete]
 		public static RaycastInfo OV_raycast(Ray ray, float range, int mask, Player ignorePlayer = null)
 		{
 			return hkDamageTool.SetupRaycast(ray, range, mask, ignorePlayer);
 		}
 
-		// Token: 0x06000085 RID: 133 RVA: 0x000059D0 File Offset: 0x00003BD0
 		[Obsolete]
 		public static RaycastInfo SetupRaycast(Ray ray, float range, int mask, Player ignorePlayer = null)
 		{
@@ -33,7 +30,6 @@ namespace EgguWare.Overrides
 			return raycastInfo2;
 		}
 
-		// Token: 0x06000086 RID: 134 RVA: 0x00005A08 File Offset: 0x00003C08
 		[Obsolete]
 		public static RaycastInfo OriginalRaycast(Ray ray, float range, int mask, Player ignorePlayer = null)
 		{
@@ -91,7 +87,6 @@ namespace EgguWare.Overrides
 			return raycastInfo;
 		}
 
-		// Token: 0x06000087 RID: 135 RVA: 0x00005BE8 File Offset: 0x00003DE8
 		[Obsolete]
 		public static bool SilAimRaycast(out RaycastInfo info)
 		{
@@ -169,7 +164,6 @@ namespace EgguWare.Overrides
 			return true;
 		}
 
-		// Token: 0x06000088 RID: 136 RVA: 0x00005F2C File Offset: 0x0000412C
 		public static bool GetPoint(GameObject Target, Vector3 StartPos, double MaxRange, out Vector3 Point)
 		{
 			Point = Vector3.zero;

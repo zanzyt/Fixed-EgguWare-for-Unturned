@@ -5,18 +5,14 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x0200000D RID: 13
 	public class OverrideHelper
 	{
-		// Token: 0x06000028 RID: 40
 		[DllImport("mono.dll", CallingConvention = CallingConvention.FastCall)]
 		private static extern IntPtr mono_domain_get();
 
-		// Token: 0x06000029 RID: 41
 		[DllImport("mono.dll", CallingConvention = CallingConvention.FastCall)]
 		private static extern IntPtr mono_method_get_header(IntPtr method);
 
-		// Token: 0x0600002A RID: 42 RVA: 0x00003B54 File Offset: 0x00001D54
 		public static void RedirectCalls(MethodInfo from, MethodInfo to)
 		{
 			IntPtr functionPointer = from.MethodHandle.GetFunctionPointer();
@@ -24,7 +20,6 @@ namespace EgguWare.Utilities
 			OverrideHelper.PatchJumpTo(functionPointer, functionPointer2);
 		}
 
-		// Token: 0x0600002B RID: 43 RVA: 0x00003B84 File Offset: 0x00001D84
 		private unsafe static void RedirectCall(MethodInfo from, MethodInfo to)
 		{
 			IntPtr value = from.MethodHandle.Value;
@@ -67,7 +62,6 @@ namespace EgguWare.Utilities
 			ptr7[3] = ptr8[3];
 		}
 
-		// Token: 0x0600002C RID: 44 RVA: 0x00003CB8 File Offset: 0x00001EB8
 		private unsafe static void PatchJumpTo(IntPtr site, IntPtr target)
 		{
 			byte* ptr = (byte*)site.ToPointer();
@@ -78,8 +72,7 @@ namespace EgguWare.Utilities
 			ptr[11] = byte.MaxValue;
 			ptr[12] = 227;
 		}
-
-		// Token: 0x0600002D RID: 45 RVA: 0x00003D00 File Offset: 0x00001F00
+		
 		private unsafe static void RedirectCallIL(MethodInfo from, MethodInfo to)
 		{
 			IntPtr value = from.MethodHandle.Value;

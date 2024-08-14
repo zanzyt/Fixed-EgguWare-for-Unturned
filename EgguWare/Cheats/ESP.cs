@@ -9,11 +9,9 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000043 RID: 67
 	[Comp]
 	public class ESP : MonoBehaviour
 	{
-		// Token: 0x060000CF RID: 207 RVA: 0x000091EC File Offset: 0x000073EC
 		[Obsolete]
 		private void OnGUI()
 		{
@@ -314,7 +312,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000D0 RID: 208 RVA: 0x00009F20 File Offset: 0x00008120
 		public static void ApplyChams(ESPObj gameObject, Color vis, Color invis)
 		{
 			ShaderType chamType = gameObject.Options.ChamType;
@@ -331,13 +328,10 @@ namespace EgguWare.Cheats
 			T.RemoveShaders(gameObject.GObject);
 		}
 
-		// Token: 0x04000120 RID: 288
 		public static List<ItemClumpObject> ItemClumps = new List<ItemClumpObject>();
 
-		// Token: 0x04000121 RID: 289
 		public static List<ESPObj> EObjects = new List<ESPObj>();
 
-		// Token: 0x04000122 RID: 290
 		private Vector2 scroll = new Vector2(0f, 0f);
 	}
 }

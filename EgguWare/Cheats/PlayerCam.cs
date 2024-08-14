@@ -6,11 +6,10 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000047 RID: 71
 	[Comp]
 	public class PlayerCam : MonoBehaviour
 	{
-		// Token: 0x060000E5 RID: 229 RVA: 0x0000A728 File Offset: 0x00008928
+	
 		public void Update()
 		{
 			if (!PlayerCam.cam_obj || !PlayerCam.subCam)
@@ -33,7 +32,6 @@ namespace EgguWare.Cheats
 			PlayerCam.subCam.enabled = false;
 		}
 
-		// Token: 0x060000E6 RID: 230 RVA: 0x0000A784 File Offset: 0x00008984
 		private void OnGUI()
 		{
 			GUI.skin = AssetUtilities.Skin;
@@ -59,7 +57,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000E7 RID: 231 RVA: 0x0000A8A8 File Offset: 0x00008AA8
 		private void DoMenu(int windowID)
 		{
 			if (PlayerCam.cam_obj == null || PlayerCam.subCam == null)
@@ -105,25 +102,18 @@ namespace EgguWare.Cheats
 			GUI.DragWindow();
 		}
 
-		// Token: 0x04000128 RID: 296
 		public static Rect viewport = new Rect((float)(Screen.width - Screen.width / 4 - 10), 30f, (float)(Screen.width / 4), (float)(Screen.height / 4));
 
-		// Token: 0x04000129 RID: 297
 		public static GameObject cam_obj;
 
-		// Token: 0x0400012A RID: 298
 		public static Camera subCam;
 
-		// Token: 0x0400012B RID: 299
 		public static bool WasEnabled;
 
-		// Token: 0x0400012C RID: 300
 		public static bool Enabled = true;
 
-		// Token: 0x0400012D RID: 301
 		public static SteamPlayer player = null;
 
-		// Token: 0x0400012E RID: 302
 		public static bool IsFullScreen = false;
 	}
 }

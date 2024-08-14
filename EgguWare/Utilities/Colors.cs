@@ -4,10 +4,8 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x02000006 RID: 6
 	public class Colors
 	{
-		// Token: 0x0600000D RID: 13 RVA: 0x00002A14 File Offset: 0x00000C14
 		public static void AddColors()
 		{
 			foreach (object obj in Enum.GetValues(typeof(ESPObject)))
@@ -30,8 +28,6 @@ namespace EgguWare.Utilities
 			Colors.AddColor("Extended_Hitbox_Circle", Color.red);
 			Colors.AddColor("Item_FOV_Circle", Color.green);
 		}
-
-		// Token: 0x0600000E RID: 14 RVA: 0x00002BC4 File Offset: 0x00000DC4
 		public static Color32 GetColor(string identifier)
 		{
 			Color32 color;
@@ -42,7 +38,6 @@ namespace EgguWare.Utilities
 			return Color.magenta;
 		}
 
-		// Token: 0x0600000F RID: 15 RVA: 0x000020AF File Offset: 0x000002AF
 		public static void AddColor(string id, Color32 c)
 		{
 			if (!G.Settings.GlobalOptions.GlobalColors.ContainsKey(id))
@@ -51,13 +46,11 @@ namespace EgguWare.Utilities
 			}
 		}
 
-		// Token: 0x06000010 RID: 16 RVA: 0x000020DE File Offset: 0x000002DE
 		public static void SetColor(string id, Color32 c)
 		{
 			G.Settings.GlobalOptions.GlobalColors[id] = c;
 		}
 
-		// Token: 0x06000011 RID: 17 RVA: 0x000020F6 File Offset: 0x000002F6
 		public static string ColorToHex(Color32 color)
 		{
 			return color.r.ToString("X2") + color.g.ToString("X2") + color.b.ToString("X2");

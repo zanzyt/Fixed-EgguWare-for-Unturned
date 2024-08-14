@@ -5,10 +5,8 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Tabs
 {
-	// Token: 0x0200002D RID: 45
 	public class AimbotTab
 	{
-		// Token: 0x060000B6 RID: 182 RVA: 0x000074C8 File Offset: 0x000056C8
 		public static void Tab()
 		{
 			GUILayout.Space(0f);
@@ -68,10 +66,8 @@ namespace EgguWare.Menu.Tabs
 			}
 		}
 
-		// Token: 0x040000B4 RID: 180
 		public static AimbotOptions SelectedObject;
 
-		// Token: 0x040000B5 RID: 181
 		private static Vector2 scrollPosition;
 	}
 }

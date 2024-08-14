@@ -109,7 +109,6 @@ namespace EgguWare.Cheats
 			return false;
 		}
 
-		// Token: 0x04000123 RID: 291
 		public static bool editingaip;
 	}
 }

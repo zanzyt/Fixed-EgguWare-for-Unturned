@@ -7,10 +7,8 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Tabs
 {
-	// Token: 0x02000031 RID: 49
 	public class PlayersTab
 	{
-		// Token: 0x060000C2 RID: 194 RVA: 0x000088C4 File Offset: 0x00006AC4
 		public static void Tab()
 		{
 			GUILayout.Space(0f);
@@ -104,10 +102,8 @@ namespace EgguWare.Menu.Tabs
 			GUILayout.EndArea();
 		}
 
-		// Token: 0x040000BE RID: 190
 		public static SteamPlayer selectedplayer = null;
 
-		// Token: 0x040000BF RID: 191
 		private static Vector2 scrollPosition1 = new Vector2(0f, 0f);
 	}
 }

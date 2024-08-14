@@ -6,11 +6,9 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000042 RID: 66
 	[Comp]
 	public class Aimlock : MonoBehaviour
 	{
-		// Token: 0x060000CC RID: 204 RVA: 0x00009030 File Offset: 0x00007230
 		private void Update()
 		{
 			if (G.Settings.AimbotOptions.Aimlock)
@@ -39,7 +37,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000CD RID: 205 RVA: 0x000090F0 File Offset: 0x000072F0
 		private void OnGUI()
 		{
 			if (!G.BeingSpied && Provider.isConnected)
@@ -55,7 +52,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x0400011F RID: 287
 		public static bool Aiming;
 	}
 }

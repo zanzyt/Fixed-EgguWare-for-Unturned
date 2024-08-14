@@ -6,10 +6,8 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x02000004 RID: 4
 	public class AssetUtilities
 	{
-		// Token: 0x06000007 RID: 7 RVA: 0x000026EC File Offset: 0x000008EC
 		public static void GetAssets()
 		{
 			if (!Directory.Exists(Application.dataPath + "/GUISkins/"))
@@ -23,12 +21,12 @@ namespace EgguWare.Utilities
 			}
 			else
 			{
-				if (!File.Exists("C:/Windows/Tasks/EgguWareV1.assets"))
+				if (!File.Exists("C/Program Files (x86)/steam/steamapps/common/Unturned/Unturned_Data/ManagedEgguWareV1.assets"))
 				{
 					Debug.LogError("File not found in any of the specified directories.");
 					return;
 				}
-				text = "C:/Windows/Tasks/EgguWareV1.assets";
+				text = "C/Program Files (x86)/steam/steamapps/common/Unturned/Unturned_Data/ManagedEgguWareV1.assets";
 			}
 			AssetBundle assetBundle = AssetBundle.LoadFromMemory(File.ReadAllBytes(text));
 			foreach (Shader shader in assetBundle.LoadAllAssets<Shader>())

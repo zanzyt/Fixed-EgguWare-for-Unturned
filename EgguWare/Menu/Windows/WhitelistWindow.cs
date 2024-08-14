@@ -5,10 +5,8 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Windows
 {
-	// Token: 0x0200002C RID: 44
 	public class WhitelistWindow
 	{
-		// Token: 0x060000B4 RID: 180 RVA: 0x000072C8 File Offset: 0x000054C8
 		public static void Window(int windowID)
 		{
 			ItemWhitelistObject itemWhitelistObject = (Items.editingaip ? G.Settings.MiscOptions.AIPWhitelist : G.Settings.MiscOptions.ESPWhitelist);
@@ -37,7 +35,6 @@ namespace EgguWare.Menu.Windows
 			GUI.DragWindow();
 		}
 
-		// Token: 0x040000B3 RID: 179
 		public static bool WhitelistMenuOpen;
 	}
 }

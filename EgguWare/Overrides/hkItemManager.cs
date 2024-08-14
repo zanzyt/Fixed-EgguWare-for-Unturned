@@ -5,10 +5,8 @@ using UnityEngine;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x0200001A RID: 26
 	public class hkItemManager
 	{
-		// Token: 0x06000089 RID: 137 RVA: 0x00006010 File Offset: 0x00004210
 		public static void OV_getItemsInRadius(Vector3 center, float sqrRadius, List<RegionCoordinate> search, List<InteractableItem> result)
 		{
 			if (ItemManager.regions == null)

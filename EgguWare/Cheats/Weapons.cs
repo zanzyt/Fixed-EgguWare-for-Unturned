@@ -10,11 +10,9 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000049 RID: 73
 	[Comp]
 	public class Weapons : MonoBehaviour
 	{
-		// Token: 0x060000EF RID: 239 RVA: 0x0000AEB0 File Offset: 0x000090B0
 		public void Update()
 		{
 			if (Provider.isConnected && !Provider.isLoading)
@@ -109,7 +107,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000F0 RID: 240 RVA: 0x0000B218 File Offset: 0x00009418
 		private void OnGUI()
 		{
 			if (Provider.isConnected && !Provider.isLoading)
@@ -176,7 +173,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000F1 RID: 241 RVA: 0x0000B504 File Offset: 0x00009704
 		private void GunInfoWindow(int winid)
 		{
 			float valueOrDefault = T.GetGunAmmo().GetValueOrDefault(0f);
@@ -193,7 +189,6 @@ namespace EgguWare.Cheats
 			GUI.DragWindow();
 		}
 
-		// Token: 0x060000F2 RID: 242 RVA: 0x0000B5F4 File Offset: 0x000097F4
 		public static void AddTracer(RaycastInfo ri)
 		{
 			if (G.Settings.WeaponOptions.TracerLines && ri.point != new Vector3(0f, 0f, 0f))
@@ -208,7 +203,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000F3 RID: 243 RVA: 0x0000B67C File Offset: 0x0000987C
 		public static void AddDamage(RaycastInfo ri)
 		{
 			if (G.Settings.WeaponOptions.DamageIndicators && ri.point != new Vector3(0f, 0f, 0f))
@@ -227,16 +221,12 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x04000137 RID: 311
 		public Rect GunInfoWin = new Rect((float)(Screen.width - 240), 50f, 200f, 75f);
 
-		// Token: 0x04000138 RID: 312
 		public static List<IndicatorObject> DamageIndicators = new List<IndicatorObject>();
 
-		// Token: 0x04000139 RID: 313
 		public static List<TracerObject> TracerLines = new List<TracerObject>();
 
-		// Token: 0x0400013A RID: 314
 		public static Dictionary<ushort, float> SpreadBackup = new Dictionary<ushort, float>();
 	}
 }

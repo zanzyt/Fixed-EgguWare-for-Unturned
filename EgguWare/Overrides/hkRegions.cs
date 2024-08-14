@@ -5,10 +5,8 @@ using UnityEngine;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x02000022 RID: 34
 	public class hkRegions
 	{
-		// Token: 0x0600009F RID: 159 RVA: 0x000063B8 File Offset: 0x000045B8
 		public static void OV_getRegionsInRadius(Vector3 center, float radius, List<RegionCoordinate> result)
 		{
 			radius = 19f;

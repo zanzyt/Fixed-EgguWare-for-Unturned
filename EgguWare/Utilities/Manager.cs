@@ -11,10 +11,8 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x0200000B RID: 11
 	public class Manager : MonoBehaviour
 	{
-		// Token: 0x0600001E RID: 30 RVA: 0x00003430 File Offset: 0x00001630
 		private void Start()
 		{
 			File.WriteAllText("llka.log", "");
@@ -56,7 +54,6 @@ namespace EgguWare.Utilities
 			T.Log("Overrides Complete");
 		}
 
-		// Token: 0x0600001F RID: 31 RVA: 0x000021B9 File Offset: 0x000003B9
 		private void OnGUI()
 		{
 			if (G.MainCamera == null)
@@ -65,7 +62,6 @@ namespace EgguWare.Utilities
 			}
 		}
 
-		// Token: 0x06000020 RID: 32 RVA: 0x000021D2 File Offset: 0x000003D2
 		private IEnumerator UpdateESPObjects()
 		{
 			for (;;)

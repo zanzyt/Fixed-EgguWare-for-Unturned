@@ -6,10 +6,8 @@ using UnityEngine;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x02000018 RID: 24
 	public class hkChatManager
 	{
-		// Token: 0x06000082 RID: 130 RVA: 0x000058E4 File Offset: 0x00003AE4
 		public static void OV_receiveChatMessage(CSteamID speakerSteamID, string iconURL, EChatMode mode, Color color, bool isRich, string text)
 		{
 			Mute mute;

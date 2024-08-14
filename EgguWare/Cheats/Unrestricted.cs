@@ -6,11 +6,10 @@ using UnityEngine;
 
 namespace EgguWare.Cheats
 {
-	// Token: 0x02000048 RID: 72
 	[Comp]
 	public class Unrestricted : MonoBehaviour
 	{
-		// Token: 0x060000EA RID: 234 RVA: 0x0000265C File Offset: 0x0000085C
+
 		private void Update()
 		{
 			if (!Provider.isConnected)
@@ -19,7 +18,6 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x060000EB RID: 235 RVA: 0x0000AB2C File Offset: 0x00008D2C
 		private void FixedUpdate()
 		{
 			Unrestricted.PlayerFlight();
@@ -37,7 +35,6 @@ namespace EgguWare.Cheats
 			this.jumpHeight.SetValue(this.jumpHeight, Unrestricted.JUMP);
 		}
 
-		// Token: 0x060000EC RID: 236 RVA: 0x0000AC4C File Offset: 0x00008E4C
 		public static void PlayerFlight()
 		{
 			if (Player.player == null)
@@ -79,28 +76,20 @@ namespace EgguWare.Cheats
 			}
 		}
 
-		// Token: 0x0400012F RID: 303
 		private FieldInfo standSpeed = typeof(PlayerMovement).GetField("SPEED_STAND", BindingFlags.Static | BindingFlags.NonPublic);
 
-		// Token: 0x04000130 RID: 304
 		private FieldInfo sprintSpeed = typeof(PlayerMovement).GetField("SPEED_SPRINT", BindingFlags.Static | BindingFlags.NonPublic);
 
-		// Token: 0x04000131 RID: 305
 		private FieldInfo proneSpeed = typeof(PlayerMovement).GetField("SPEED_PRONE", BindingFlags.Static | BindingFlags.NonPublic);
 
-		// Token: 0x04000132 RID: 306
 		private FieldInfo jumpHeight = typeof(PlayerMovement).GetField("JUMP", BindingFlags.Static | BindingFlags.NonPublic);
 
-		// Token: 0x04000133 RID: 307
 		private static readonly float SPEED_STAND = 4.5f;
 
-		// Token: 0x04000134 RID: 308
 		private static readonly float SPEED_PRONE = 1.5f;
 
-		// Token: 0x04000135 RID: 309
 		private static readonly float SPEED_SPRINT = 7f;
 
-		// Token: 0x04000136 RID: 310
 		private static readonly float JUMP = 7f;
 	}
 }

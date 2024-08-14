@@ -8,16 +8,13 @@ using UnityEngine;
 
 namespace EgguWare.Utilities
 {
-	// Token: 0x02000007 RID: 7
 	public class ConfigUtilities
 	{
-		// Token: 0x06000013 RID: 19 RVA: 0x00002130 File Offset: 0x00000330
 		private static string GetConfigPath(string name = "default")
 		{
 			return ConfigUtilities.ConfigPath + name + ".config";
 		}
 
-		// Token: 0x06000014 RID: 20 RVA: 0x00002142 File Offset: 0x00000342
 		public static void CreateEnvironment()
 		{
 			if (!Directory.Exists(ConfigUtilities.ConfigPath))
@@ -32,7 +29,6 @@ namespace EgguWare.Utilities
 			ConfigUtilities.LoadConfig("default");
 		}
 
-		// Token: 0x06000015 RID: 21 RVA: 0x00002BF8 File Offset: 0x00000DF8
 		public static void SaveConfig(string name = "default", bool setconfig = false)
 		{
 			string configPath = ConfigUtilities.GetConfigPath(name);
@@ -48,7 +44,6 @@ namespace EgguWare.Utilities
 			}
 		}
 
-		// Token: 0x06000016 RID: 22 RVA: 0x00002C60 File Offset: 0x00000E60
 		public static void LoadConfig(string name = "default")
 		{
 			G.Settings = JsonConvert.DeserializeObject<Config>(File.ReadAllText(ConfigUtilities.GetConfigPath(name)));
@@ -60,7 +55,6 @@ namespace EgguWare.Utilities
 			Colors.AddColors();
 		}
 
-		// Token: 0x06000017 RID: 23 RVA: 0x00002CC8 File Offset: 0x00000EC8
 		public static List<string> GetConfigs(bool Extensions = false)
 		{
 			List<string> list = new List<string>();
@@ -78,10 +72,8 @@ namespace EgguWare.Utilities
 			return list;
 		}
 
-		// Token: 0x0400000B RID: 11
 		public static string SelectedConfig = "default";
 
-		// Token: 0x0400000C RID: 12
 		private static string ConfigPath = Application.dataPath + "/EConfigs/";
 	}
 }

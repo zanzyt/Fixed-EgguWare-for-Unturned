@@ -7,16 +7,12 @@ using UnityEngine;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x0200001C RID: 28
 	public class hkPlayer : MonoBehaviour
 	{
-		// Token: 0x0600008D RID: 141 RVA: 0x000023CF File Offset: 0x000005CF
 		public void OV_ReceiveTakeScreenshot()
 		{
 			base.StartCoroutine(this.takeScreenshot());
 		}
-
-		// Token: 0x0600008E RID: 142 RVA: 0x000023DE File Offset: 0x000005DE
 		private IEnumerator takeScreenshot()
 		{
 			if ((double)(Time.realtimeSinceStartup - hkPlayer.LastSpy) < 0.5 || G.BeingSpied)
@@ -69,10 +65,8 @@ namespace EgguWare.Overrides
 			yield break;
 		}
 
-		// Token: 0x0400003E RID: 62
 		public static float LastSpy;
 
-		// Token: 0x0400003F RID: 63
 		private static readonly ServerInstanceMethod SendScreenshotRelay = ServerInstanceMethod.Get(typeof(Player), "ReceiveScreenshotRelay");
 	}
 }

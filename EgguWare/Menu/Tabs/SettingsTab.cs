@@ -5,10 +5,8 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Tabs
 {
-	// Token: 0x0200002F RID: 47
 	public class SettingsTab
 	{
-		// Token: 0x060000BA RID: 186 RVA: 0x00007E98 File Offset: 0x00006098
 		public static void Tab()
 		{
 			GUILayout.Space(0f);
@@ -90,16 +88,12 @@ namespace EgguWare.Menu.Tabs
 			GUILayout.EndArea();
 		}
 
-		// Token: 0x040000B7 RID: 183
 		public static string SelectedColorIdentifier = "";
 
-		// Token: 0x040000B8 RID: 184
 		private static Vector2 scrollPosition1 = new Vector2(0f, 0f);
 
-		// Token: 0x040000B9 RID: 185
 		private static string textfield = "New Config";
 
-		// Token: 0x040000BA RID: 186
 		private static Vector2 scrollPosition2 = new Vector2(0f, 0f);
 	}
 }

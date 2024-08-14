@@ -8,10 +8,8 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Tabs
 {
-	// Token: 0x0200002E RID: 46
 	public class MiscTab
 	{
-		// Token: 0x060000B8 RID: 184 RVA: 0x000079B8 File Offset: 0x00005BB8
 		public static void Tab()
 		{
 			GUILayout.Space(0f);
@@ -75,7 +73,6 @@ namespace EgguWare.Menu.Tabs
 			GUILayout.EndArea();
 		}
 
-		// Token: 0x040000B6 RID: 182
 		public static MiscOptions SelectedObject;
 	}
 }

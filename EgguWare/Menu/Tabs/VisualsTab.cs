@@ -8,10 +8,8 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Tabs
 {
-	// Token: 0x02000030 RID: 48
 	public class VisualsTab
 	{
-		// Token: 0x060000BD RID: 189 RVA: 0x00008250 File Offset: 0x00006450
 		public static void Tab()
 		{
 			GUILayout.Space(0f);
@@ -84,7 +82,6 @@ namespace EgguWare.Menu.Tabs
 			GUILayout.EndArea();
 		}
 
-		// Token: 0x060000BE RID: 190 RVA: 0x00008720 File Offset: 0x00006920
 		private static void DrawGlobals(ESPOptions options, string objname)
 		{
 			GUILayout.Space(2f);
@@ -96,7 +93,6 @@ namespace EgguWare.Menu.Tabs
 			options.Distance = GUILayout.Toggle(options.Distance, "Distance", Array.Empty<GUILayoutOption>());
 		}
 
-		// Token: 0x060000BF RID: 191 RVA: 0x000087E0 File Offset: 0x000069E0
 		private static void DrawGlobals2(ESPOptions options)
 		{
 			if (GUILayout.Button("Cham Type: " + Enum.GetName(typeof(ShaderType), options.ChamType), Array.Empty<GUILayoutOption>()))
@@ -111,13 +107,10 @@ namespace EgguWare.Menu.Tabs
 			options.FontSize = (int)GUILayout.HorizontalSlider((float)options.FontSize, 0f, 24f, Array.Empty<GUILayoutOption>());
 		}
 
-		// Token: 0x040000BB RID: 187
 		public static ESPObject SelectedObject = ESPObject.Player;
 
-		// Token: 0x040000BC RID: 188
 		private static Vector2 scrollPosition;
 
-		// Token: 0x040000BD RID: 189
 		public static ESPOptions SelectedOptions = G.Settings.PlayerOptions;
 	}
 }

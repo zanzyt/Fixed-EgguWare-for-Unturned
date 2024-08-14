@@ -10,17 +10,13 @@ using UnityEngine;
 
 namespace EgguWare.Overrides
 {
-	// Token: 0x02000023 RID: 35
 	[Comp]
 	public class hkUsableGun : MonoBehaviour
 	{
-		// Token: 0x060000A1 RID: 161 RVA: 0x00002446 File Offset: 0x00000646
 		private void Start()
 		{
 			hkUsableGun.BulletsField = typeof(UseableGun).GetField("bullets", BindingFlags.Instance | BindingFlags.NonPublic);
 		}
-
-		// Token: 0x060000A2 RID: 162 RVA: 0x000064B8 File Offset: 0x000046B8
 		public void OV_ballistics()
 		{
 			Useable useable = Player.player.equipment.useable;
@@ -75,7 +71,6 @@ namespace EgguWare.Overrides
 			list.Clear();
 		}
 
-		// Token: 0x060000A3 RID: 163 RVA: 0x000066C0 File Offset: 0x000048C0
 		public static EPlayerHit CalcHitMarker(ItemGunAsset PAsset, ref RaycastInfo ri)
 		{
 			EPlayerHit eplayerHit = EPlayerHit.NONE;
@@ -176,7 +171,6 @@ namespace EgguWare.Overrides
 			return eplayerHit;
 		}
 
-		// Token: 0x04000045 RID: 69
 		private static FieldInfo BulletsField;
 	}
 }

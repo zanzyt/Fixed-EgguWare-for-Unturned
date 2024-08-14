@@ -11,11 +11,9 @@ using UnityEngine;
 
 namespace EgguWare.Menu
 {
-	// Token: 0x0200002A RID: 42
 	[Comp]
 	public class Main : MonoBehaviour
 	{
-		// Token: 0x060000AB RID: 171 RVA: 0x00006B80 File Offset: 0x00004D80
 		private void Start()
 		{
 			Main.GUIColor = GUI.color;
@@ -46,7 +44,6 @@ namespace EgguWare.Menu
 			}
 		}
 
-		// Token: 0x060000AC RID: 172 RVA: 0x000024D3 File Offset: 0x000006D3
 		private void Update()
 		{
 			if (Input.GetKeyDown(KeyCode.F1))
@@ -61,7 +58,6 @@ namespace EgguWare.Menu
 			}
 		}
 
-		// Token: 0x060000AD RID: 173 RVA: 0x00006DD8 File Offset: 0x00004FD8
 		private void OnGUI()
 		{
 			if (!G.BeingSpied && Main.MenuOpen)
@@ -109,7 +105,6 @@ namespace EgguWare.Menu
 			}
 		}
 
-		// Token: 0x060000AE RID: 174 RVA: 0x0000704C File Offset: 0x0000524C
 		private void MenuWindow(int windowID)
 		{
 			switch (Main.SelectedTab)
@@ -136,7 +131,6 @@ namespace EgguWare.Menu
 			GUI.DragWindow();
 		}
 
-		// Token: 0x060000AF RID: 175 RVA: 0x000070AC File Offset: 0x000052AC
 		public Main()
 		{
 			this.buttons = new List<GUIContent>();
@@ -148,61 +142,42 @@ namespace EgguWare.Menu
 			this.Version = "Russian vodka";
 		}
 
-		// Token: 0x0400009E RID: 158
 		public static MenuTab SelectedTab = MenuTab.Visuals;
 
-		// Token: 0x0400009F RID: 159
 		public static bool MenuOpen = false;
 
-		// Token: 0x040000A0 RID: 160
 		public static string DropdownTitle;
 
-		// Token: 0x040000A1 RID: 161
 		public static Rect DropdownPos;
 
-		// Token: 0x040000A2 RID: 162
 		public static Color GUIColor;
 
-		// Token: 0x040000A3 RID: 163
 		private List<GUIContent> buttons;
 
-		// Token: 0x040000A4 RID: 164
 		public static List<GUIContent> buttons2 = new List<GUIContent>();
 
-		// Token: 0x040000A5 RID: 165
 		public static List<GUIContent> buttons3 = new List<GUIContent>();
 
-		// Token: 0x040000A6 RID: 166
 		public static List<GUIContent> buttons4 = new List<GUIContent>();
 
-		// Token: 0x040000A7 RID: 167
 		public static List<GUIContent> buttons5 = new List<GUIContent>();
 
-		// Token: 0x040000A8 RID: 168
 		public static Rect CursorPos = new Rect(0f, 0f, 20f, 20f);
 
-		// Token: 0x040000A9 RID: 169
 		private int i;
 
-		// Token: 0x040000AA RID: 170
 		private Texture _cursorTexture;
 
-		// Token: 0x040000AB RID: 171
 		private Rect windowRect;
 
-		// Token: 0x040000AC RID: 172
 		private Rect itemRect;
 
-		// Token: 0x040000AD RID: 173
 		private Rect guiRect;
 
-		// Token: 0x040000AE RID: 174
 		private readonly string Name;
 
-		// Token: 0x040000AF RID: 175
 		private readonly string Version;
-
-		// Token: 0x040000B0 RID: 176
+		
 		private Font dynamicFont;
 	}
 }

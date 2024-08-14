@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace EgguWare.Menu.Tabs
 {
-	// Token: 0x02000032 RID: 50
+
 	public class WeaponsTab
 	{
-		// Token: 0x060000C5 RID: 197 RVA: 0x00008CEC File Offset: 0x00006EEC
+
 		public static void Tab()
 		{
 			GUILayout.Space(0f);

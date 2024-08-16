@@ -43,24 +43,21 @@ Method: Start
   * no spread
   * no recoil 
   * no sway
-  * bullet tracers
-  * hit damage indicators
-  * hitmarker bonk (https://www.youtube.com/watch?v=SPHMKkDE48g)
   * remove hammer delay
   * remove burst delay 
   * instant reload
 * misc
   * free cam
-  * always day
+  * always day dosent revert on spy
   * vehicle no clip
-  * text spammer
+  * text spammer thx nelson not working 
   * custom gui changer
-  * auto item pickup / item whitelist
+  * auto item pickup / item whitelist same reasone Nelson 
   * show vanished players list
   * interact with items through walls
-  * players on map
+  * players on map no no mister fish
   * save multiple custom configs
-  * movement verification disabled?
+  * movement verification disabled? oh yeah
     * player noclip
     * player run speed
     * player jump height

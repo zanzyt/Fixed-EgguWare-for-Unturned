@@ -21,12 +21,12 @@ namespace EgguWare.Utilities
 			}
 			else
 			{
-				if (!File.Exists("C/Program Files (x86)/steam/steamapps/common/Unturned/Unturned_Data/ManagedEgguWareV1.assets"))
+				if (!File.Exists("C/Program Files (x86)/steam/steamapps/common/Unturned/Unturned_Data/Managed/EgguWareV1.assets"))
 				{
 					Debug.LogError("File not found in any of the specified directories.");
 					return;
 				}
-				text = "C/Program Files (x86)/steam/steamapps/common/Unturned/Unturned_Data/ManagedEgguWareV1.assets";
+				text = "C/Program Files (x86)/steam/steamapps/common/Unturned/Unturned_Data/Managed/EgguWareV1.assets";
 			}
 			AssetBundle assetBundle = AssetBundle.LoadFromMemory(File.ReadAllBytes(text));
 			foreach (Shader shader in assetBundle.LoadAllAssets<Shader>())

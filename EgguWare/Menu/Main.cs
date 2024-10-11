@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using EgguWare.Attributes;
 using EgguWare.Cheats;
@@ -138,8 +138,8 @@ namespace EgguWare.Menu
 			this.windowRect = new Rect(80f, 80f, 550f, 450f);
 			this.itemRect = new Rect(400f, 465f, 200f, 250f);
 			this.guiRect = new Rect(100f, 755f, 200f, 250f);
-			this.Name = "I can use dnspy?";
-			this.Version = "Russian vodka";
+			this.Name = "Visuals studio 2022";
+			this.Version = "EgguWare";
 		}
 
 		public static MenuTab SelectedTab = MenuTab.Visuals;

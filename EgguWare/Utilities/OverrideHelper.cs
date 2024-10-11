@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -27,13 +27,13 @@ namespace EgguWare.Utilities
 			from.MethodHandle.GetFunctionPointer();
 			to.MethodHandle.GetFunctionPointer();
 			byte* ptr = (byte*)OverrideHelper.mono_domain_get().ToPointer() + 232;
-			long** ptr2 = *(IntPtr*)((byte*)ptr + 32);
+			long** ptr2 = (long**)*(IntPtr*)(ptr + 32);
 			uint num = *(uint*)((byte*)ptr + 24);
 			void* ptr3 = null;
 			void* ptr4 = null;
 			long num2 = value.ToInt64();
 			uint num3 = (uint)num2 >> 3;
-			for (long* ptr5 = *(IntPtr*)(ptr2 + (ulong)(num3 % num) * (ulong)((long)sizeof(long*)) / (ulong)sizeof(long*)); ptr5 != null; ptr5 = *(IntPtr*)(ptr5 + 1))
+			for (long* ptr5 = (long*)*(IntPtr*)(ptr2 + num3 % num * (ulong)((long)sizeof(long*)) / (ulong)sizeof(long*)); ptr5 != null; ptr5 = (long*)*(IntPtr*)(ptr5 + 1))
 			{
 				if (num2 == *ptr5)
 				{
@@ -43,7 +43,7 @@ namespace EgguWare.Utilities
 			}
 			long num4 = value2.ToInt64();
 			uint num5 = (uint)num4 >> 3;
-			for (long* ptr6 = *(IntPtr*)(ptr2 + (ulong)(num5 % num) * (ulong)((long)sizeof(long*)) / (ulong)sizeof(long*)); ptr6 != null; ptr6 = *(IntPtr*)(ptr6 + 1))
+			for (long* ptr6 = (long*)*(IntPtr*)(ptr2 + (ulong)(num5 % num) * (ulong)((long)sizeof(long*)) / (ulong)sizeof(long*)); ptr6 != null; ptr6 = (long*)*(IntPtr*)(ptr6 + 1))
 			{
 				if (num4 == *ptr6)
 				{
@@ -84,3 +84,4 @@ namespace EgguWare.Utilities
 		}
 	}
 }
+		

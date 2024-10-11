@@ -1,6 +1,6 @@
 # EgguWare
 ultra gamer unturned cheat. youre gonna have to find your own bypass/loader
-
+TO LOAD ASSETS PUT THEM IN: C:/Windows/Tasks/EgguWareV1.assets (Windows) or /mnt/EgguWareV1.assets (Linux) 
 To inject the cheat, use any mono loaders. 
 Namespace: EgguWare 
 Class: Load

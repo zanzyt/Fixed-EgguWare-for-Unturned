@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using SDG.NetPak;
 using SDG.NetTransport;
@@ -52,12 +52,12 @@ namespace EgguWare.Overrides
 			byte[] data = texture2D2.EncodeToJPG(33);
 			if (data.Length < 30000)
 			{
-				hkPlayer.SendScreenshotRelay.Invoke(((Player)this).GetNetId(), ENetReliability.Reliable, delegate(NetPakWriter writer)
-				{
-					ushort num6 = (ushort)data.Length;
-					writer.WriteUInt16(num6);
-					writer.WriteBytes(data, (int)num6);
-				});
+				//hkPlayer.SendScreenshotRelay.Invoke((this as Player).GetNetId(), ENetReliability.Reliable, delegate(NetPakWriter writer)
+				//{
+				//	ushort num6 = (ushort)data.Length;
+				//	writer.WriteUInt16(num6);
+				//	writer.WriteBytes(data, (int)num6);
+				//});
 			}
 			yield return new WaitForFixedUpdate();
 			yield return new WaitForEndOfFrame();

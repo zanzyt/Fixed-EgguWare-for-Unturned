@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using EgguWare.Classes;
 
 namespace EgguWare.Options
@@ -13,7 +13,7 @@ namespace EgguWare.Options
 
 		public bool Spam;
 
-		public string SpamText = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+		public string SpamText = "Zanzyt is beast";
 
 		public bool ShowEgguwareUser = true;
 
